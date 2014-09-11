@@ -1,0 +1,31 @@
+{
+  "name": "cherry-wit",
+  "version": "1.0.0",
+  "description": "cherry plugin to interact with wit.ai",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wit-ai/cherry-wit"
+  },
+  "keywords": [
+    "cherry",
+    "wit",
+    "automation",
+    "home",
+    "raspberry",
+    "pi",
+    "nlp"
+  ],
+  "author": "willy@wit.ai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wit-ai/cherry-wit/issues"
+  },
+  "homepage": "https://github.com/wit-ai/cherry-wit",
+  "dependencies": {
+    "request": "^2.42.0"
+  }
+}
