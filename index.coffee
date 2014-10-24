@@ -29,6 +29,8 @@ module.exports = (cherry) ->
 
     if x.text
       req cfg, '/text', { q: x.text }, (res, body) ->
+        body.cherry ||= {}
+        body.cherry.msg = x
         cherry.produce(from: 'wit', body: body)
       return
 
@@ -36,6 +38,8 @@ module.exports = (cherry) ->
       req cfg, '/start', {}
     else if x.mic == 'stop'
       req cfg, '/stop', {}, (res, body) ->
+        body.cherry ||= {}
+        body.cherry.msg = x
         cherry.produce(from: 'wit', body: body)
     else
       log 'unknown msg', x

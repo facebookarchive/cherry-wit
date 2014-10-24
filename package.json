@@ -1,6 +1,6 @@
 {
   "name": "cherry-wit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "cherry plugin to interact with wit.ai",
   "main": "index.js",
   "scripts": {
